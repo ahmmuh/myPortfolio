@@ -1,0 +1,60 @@
+.header {
+    background-image: linear-gradient(to top, rgb(36, 27, 16), rgba(114, 94, 57, 0.11)), url('../images/headerBg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    opacity: .9;
+    padding-top: 110px;
+}
+
+.header h1 {
+    padding: 10px;
+    color: #fff;
+    font-size: 45px;
+    animation: heading 2s linear 4s infinite;
+}
+
+.header p {
+    animation: parag 1s ease-in;
+    padding: 10px 200px;
+    font-size: 26px;
+    font-style: normal;
+    color: rgb(243, 235, 235);
+    text-shadow: 2px 3px rgb(139, 42, 12);
+}
+
+@keyframes parag {
+    10% {
+        color: red;
+        font-size: 20px;
+        transform: rotateX(130deg);
+        opacity: .3;
+    }
+}
+
+@keyframes heading {
+    10% {
+        font-size: 20px;
+        transition: 2s ease-in;
+        transform: rotateX(-130deg, 130deg);
+        opacity: .1;
+    }
+}
+
+/* media querry */
+
+@media(max-width: 768px) {
+    .header {
+        width: 100%;
+    }
+    .header p,h1 {
+        padding: 20px 30px;
+    }
+
+  
+}

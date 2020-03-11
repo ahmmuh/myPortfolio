@@ -1,0 +1,35 @@
+.gitHub {
+    text-align: center;
+    height: 100px;
+    width: 60%;
+    margin: -50px auto 150px auto;
+}
+
+.gitHub img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin: 10px;
+}
+
+.gitHub img:hover {
+    transform: scale(1.1);
+}
+
+.gitHub a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #222;
+    padding: 10px;
+    background-color: rgb(180, 175, 175);
+    border-radius: 2rem;
+    display: block;
+    margin: 0 auto;
+    transform: skew(20deg);
+}
+
+.gitHub a:hover {
+    background-color: rgb(140, 233, 140);
+    transition: 1s ease-in-out;
+    transform: skew(-20deg);
+}

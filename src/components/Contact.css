@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+.container {
+    font-family: 'Indie Flower';
+}
+
+#contact-form {
+    background-color: rgb(87, 75, 75);
+    width: 60%;
+    margin: 0 auto;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+    ;
+}
+
+.form-control label {
+    padding: 6px;
+    font-size: 23px;
+}
+
+.form-control input {
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 1rem;
+    outline: none;
+}
+
+.form-control textarea {
+    width: 80%;
+    margin: 10px;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+::placeholder {
+    font-size: 15px;
+}
+
+#contact-form .submitbtn {
+    padding: 10px;
+    width: 120px;
+    margin: 10px;
+    outline: none;
+    background-color: inherit;
+    color: white;
+    border: 1px solid #fff;
+}
+
+#contact-form .submitbtn:hover {
+    background-color: #222;
+    color: white;
+    cursor: pointer;
+}
+
+@media(max-width:768px) {
+    #contact-form {
+        width: 100%;
+    }
+    #contact-form .submitbtn {
+        width: 100%;
+    }
+}

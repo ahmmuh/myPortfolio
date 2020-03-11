@@ -1,0 +1,50 @@
+.container {
+    text-align: center;
+    margin: 2px auto;
+    color: rgb(8, 6, 6);
+    font-size: 20px;
+}
+
+.historyTitle {
+    background-color: rgb(110, 110, 90);
+    padding: 7px;
+    margin: 10px;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.mainHistory {
+    display: flex;
+    align-items: stretch;
+}
+
+.mainHistory h3, p, .sectionHistory h3, p {
+    padding: 0 50px;
+    text-align: left;
+}
+
+.sectionHistory {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(220px, auto);
+}
+
+.sectionHistory>div {
+    background-color: inherit;
+    border-radius: 20px;
+    color: #fff;
+    background-color: inherit;
+}
+
+/* STYLE FOR SMALL SCREENS */
+
+@media(max-width: 768px) {
+    .mainHistory, .sectionHistory {
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
